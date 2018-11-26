@@ -33,7 +33,7 @@
         <div class="col-md-12">
           <div class="text-right mb-3">
             <input class="form-control" id="in" type="text" placeholder="Add Your Key" onkeyup="fetchKey()" />
-            <button class="btn btn-success">Test</button>
+            <button class="btn btn-success">Submit</button>
           </div>
         </div>
       </div>
@@ -44,13 +44,13 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 col-sm-3 col-xs-6">
+      <!-- <div class="col-md-2 col-sm-3 col-xs-6">
         <div class="chat-box">
           <h4 class="text-center online">Online User</h4>
           <ul class="list-group " id="online-user"></ul>
         </div>
-      </div>
-      <div class="col-md-10 col-sm-9 col-xs-6">
+      </div> -->
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <div id="challange-list">
           <!-- Data will be loaded -->
         </div>
@@ -59,6 +59,9 @@
     <!-- End of Row -->
   </div>
   <!-- End of Container Fluid -->
+
+
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -87,25 +90,29 @@
         list.append(`
                 <div class="card">
                   <div class="card-header d-flex justify-content-between">
-                    <span>${'Shuvojit'}</span>
-                    <span>Level: 7</span>
+                    <span>
+                      <b>${(i + 1) + '. '}</b>  ${'Shuvojit'}
+                      </span> 
+                      <span>  Current Level: Coding just got fun</span>
+                    <span id="progress-level">Level: 10</span>
                   </div>
                   <div class="card-body">
                     <div class="progress">
                       <span class="level-indicator" >5</span>
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="8"
+                      <div class="progress-bar progress-bar " role="progressbar" aria-valuenow="8"
                         aria-valuemin="0" aria-valuemax="12" style="width: 60%">
                       </div>
                     </div>
-
                     <div class="badges">
-                      <div class="challenge">
-                        <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
-                      </div>
-                      <div class="challenge">
-                        <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
-                      </div>
+                      
+                    <div class="challenge">
+                      <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
                     </div>
+                    <div class="challenge">
+                      <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
+                    </div>
+                  </div>
+    
                   </div>
                 </div>
               `);
@@ -122,3 +129,39 @@
 </body>
 
 </html>
+
+
+
+<!-- <div class="badges">
+    <div class="challenge">
+      <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
+    </div>
+    <div class="challenge">
+      <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
+    </div>
+  </div> -->
+<!-- 
+<div class="card">
+  <div class="card-header d-flex justify-content-between">
+    <span>${'1. Shuvojit'}</span>
+    <span id="progress-level">Level: 1,2,3,4</span>
+  </div>
+  <div class="card-body">
+    <div class="progress">
+      <span class="level-indicator">5</span>
+      <div class="progress-bar progress-bar " role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="12"
+        style="width: 60%">
+      </div>
+    </div>
+    <div class="badges">
+
+      <div class="challenge">
+        <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
+      </div>
+      <div class="challenge">
+        <img src="https://i.ibb.co/j4CZQmq/logo.png" class="img-fluid" />
+      </div>
+    </div>
+
+  </div>
+</div> -->
